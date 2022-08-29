@@ -1,3 +1,4 @@
+# PLZ TURN TO FILEEYES! THIS IS JUST THE BETA EDITION! 
 # FileEyes
 ## What is FileEyes? 
 FileEyes is a simple file-reader. It is just like `VSCode`, `Sublimetext3` and other file editors.  
