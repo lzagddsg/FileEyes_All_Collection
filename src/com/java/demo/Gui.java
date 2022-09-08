@@ -7,22 +7,8 @@
 
 package com.java.demo;
 
-import java.awt.FileDialog;
-import java.awt.Frame;
-import java.awt.Menu;
-import java.awt.MenuBar;
-import java.awt.MenuItem;
-import java.awt.TextArea;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.awt.*;
+import java.io.*;
 
 public class Gui {
 
@@ -61,10 +47,7 @@ public class Gui {
 		frame.setBounds(700, 300, 600, 500);
 		frame.setVisible(true);
 		closeItem.addActionListener(new ActionListener() {
-
-			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO 自动生成的方法存根
 				System.exit(0);
 			}
 		});
@@ -74,7 +57,6 @@ public class Gui {
 			public void actionPerformed(ActionEvent e) {
                 // 自动更改项目名称
                 frame.setTitle("FileEyes - " + openDlg.getFile());
-				// TODO 自动生成的方法存根
 				openDlg.setVisible(true);
 				String fileName = openDlg.getDirectory() + openDlg.getFile();
 				if (openDlg.getFile() != null) {
@@ -105,10 +87,7 @@ public class Gui {
 			}
 		});
 		saveItem.addActionListener(new ActionListener() {
-
-			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO 自动生成的方法存根
 				saveDlg.setVisible(true);
 				BufferedWriter bw = null;
 				String fileName = saveDlg.getDirectory()+saveDlg.getFile();
@@ -140,7 +119,6 @@ public class Gui {
 	}
 
 	public static void main(String[] args) {
-		// TODO 自动生成的方法存根
 		new Gui();
 	}
 
